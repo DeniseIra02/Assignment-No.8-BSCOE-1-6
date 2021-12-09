@@ -13,9 +13,4 @@ def getPlayerNum():
     yourNum_list = [num_one, num_two, num_three]
     return yourNum_list
 
-def getLotNum():
-    lotN1, lotN2, lotN3 = random.sample(range (0,9),3)
-    lotNum_list = [lotN1, lotN2, lotN3]
-    return lotNum_list
-
 player_num = getPlayerNum()
