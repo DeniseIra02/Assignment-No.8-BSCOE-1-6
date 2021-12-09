@@ -24,6 +24,10 @@ def win_loseChecker(a_list, b_list):
     else:
         print("You Lose!")
 
-player_num = getPlayerNum()
-lottery_num = getLotNum()
-wlchecker = win_loseChecker(player_num, lottery_num)
+def anotherGame():
+    player_num = getPlayerNum()
+    lottery_num = getLotNum()
+
+    print(f"Your number: {player_num} \n Lottery Number: {lottery_num}")
+    
+    win_loseChecker(player_num, lottery_num)
