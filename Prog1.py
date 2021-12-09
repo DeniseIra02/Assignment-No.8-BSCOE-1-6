@@ -5,3 +5,12 @@ print("Note! Make sure that your input digit are from 0-9 only.")
 print("-----------------------------------------------------------")
 
 import random
+
+def getPlayerNum():
+    num_one = int(input("Enter your first number: \n>"))
+    num_two = int(input("Enter your second number: \n>"))
+    num_three = int(input("Enter your third number: \n>"))
+    yourNum_list = [num_one, num_two, num_three]
+    return yourNum_list
+
+player_num = getPlayerNum()
