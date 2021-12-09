@@ -18,5 +18,12 @@ def getLotNum():
     lotNum_list = [lotN1, lotN2, lotN3]
     return lotNum_list
 
+def win_loseChecker(a_list, b_list):
+    if sorted(a_list) == sorted(b_list):
+        print("Winner!")
+    else:
+        print("You Lose!")
+
 player_num = getPlayerNum()
 lottery_num = getLotNum()
+wlchecker = win_loseChecker(player_num, lottery_num)
