@@ -31,3 +31,16 @@ def anotherGame():
     print(f"Your number: {player_num} \n Lottery Number: {lottery_num}")
     
     win_loseChecker(player_num, lottery_num)
+
+anotherGame()
+while True:
+    print("Thank for playing! \nPlease type 'y' if you want to play again and type 'n' if not.")
+    yes_no = input("Want to play again?: ")
+    if yes_no == 'y':
+        print("-----------------------------------------------------------")
+        print("Note! Make sure that your input digit are from 0-9 only.")
+        print("-----------------------------------------------------------")
+        anotherGame()
+    else:
+        print("Game Over. Bye!")
+        break
