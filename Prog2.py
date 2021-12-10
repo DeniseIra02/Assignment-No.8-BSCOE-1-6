@@ -13,3 +13,19 @@ def getPlayerNum():
     return your_num
 
 your_guess = getPlayerNum()
+
+while your_guess != the_num:
+    if your_guess > the_num:
+        print("-----------------------------------------------------------")
+        print("Try again. Make it Lower!(less than)")
+        print("-----------------------------------------------------------")
+        your_guess = getPlayerNum()
+
+    else:
+        print("-----------------------------------------------------------")
+        print ("Try again. Make it Higher!(greater than)")
+        print("-----------------------------------------------------------")
+        your_guess = getPlayerNum()
+
+print("YOU GOT IT RIGHT!")
+print(f"The number is {the_num}")
